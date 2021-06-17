@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useState, useRef } from 'react';
 import './App.css';
 
