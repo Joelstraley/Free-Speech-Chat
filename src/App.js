@@ -24,6 +24,7 @@ firebase.initializeApp({
   messagingSenderId: env.MESSAGE,
   appId: env.APPID,
   measurementId: env.MEASUREMENT
+
 })
 
 const auth = firebase.auth();
