@@ -1,22 +1,29 @@
+
 import React, { useState, useRef } from 'react';
+import env from "react-dotenv";
 import './App.css';
+
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
 
+
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+/* const admin = require("firebase-admin");
+const serviceAccount = JSON.parse(process.env.GOOGLE_CREDS) */
 firebase.initializeApp({
-  apiKey: "AIzaSyCE4ZUyGd_rnwHG0FAUpw4m1Ml1LoxJNto",
-    authDomain: "madchat-8afb4.firebaseapp.com",
-    projectId: "madchat-8afb4",
-    storageBucket: "madchat-8afb4.appspot.com",
-    messagingSenderId: "118347123455",
-    appId: "1:118347123455:web:bf77644c727fcaf3bc1aca",
-    measurementId: "G-J2NH9WB1DN"
+  apiKey: env.APIKEY,
+  authDomain: env.AUTH,
+  projectId: env.PROJECT,
+  storageBucket: env.STORAGE,
+  messagingSenderId: env.MESSAGE,
+  appId: env.APPID,
+  measurementId: env.MEASUREMENT
 })
 
 const auth = firebase.auth();
