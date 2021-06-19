@@ -26,7 +26,6 @@ firebase.initializeApp({
   measurementId: env.MEASUREMENT
 
 })
-
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
