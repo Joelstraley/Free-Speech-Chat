@@ -80,9 +80,7 @@ function ChatRoom(){
 
   const sendMessage = async(e) => {
       e.preventDefault();
-
       const { uid, photoURL } = auth.currentUser; 
-
       await messagesRef.add({
         text: formValue,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
