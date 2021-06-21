@@ -40,7 +40,6 @@ function App() {
         <h1>FREE SPEECH CHAT</h1>
         <SignOut />
       </header>
-
       <section>
         {user ? <ChatRoom /> : <SignIn />}
       </section>
