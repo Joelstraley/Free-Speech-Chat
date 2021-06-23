@@ -23,8 +23,7 @@ firebase.initializeApp({
   storageBucket: env.STORAGE,
   messagingSenderId: env.MESSAGE,
   appId: env.APPID,
-  measurementId: env.MEASUREMENT
-
+  measurementId: env.MEASUREMENT,
 })
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -38,6 +37,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>FREE SPEECH CHAT</h1>
+        {console.log(env.APIKEY)}
         <SignOut />
       </header>
       <section>

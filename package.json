@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^8.2.0",
     "firebase": "^8.6.7",
+    "firebase-admin": "^9.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dotenv": "^0.1.3",
@@ -40,9 +41,14 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": ["APIKEY",
-      "AUTH","PROJECT","STORAGE",
-      "MESSAGE","APPID","MEASUREMENT"
+    "whitelist": [
+      "APIKEY",
+      "AUTH",
+      "PROJECT",
+      "STORAGE",
+      "MESSAGE",
+      "APPID",
+      "MEASUREMENT"
     ]
   }
 }
