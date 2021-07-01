@@ -37,7 +37,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>FREE SPEECH CHAT</h1>
-        {console.log(env.APIKEY)}
         <SignOut />
       </header>
       <section>
@@ -51,9 +50,12 @@ function App() {
 
 function SignIn(){
   const signInWithGoogle =  () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider)
+    const gProvider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(gProvider)
   }
+ 
+
+
   return (
     <>
     <button className="sign-in" onClick={signInWithGoogle}> Sign in with Google</button>
